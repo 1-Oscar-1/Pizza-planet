@@ -172,8 +172,6 @@ header{
 }
 .contacto form label, input{
     padding: 5px 0;
-    display: flex;
-    flex-direction: column;
 }
 .contacto input{
     padding: 2px 5px;
@@ -187,6 +185,23 @@ header{
     max-height: 100px;
     padding: 5px 5px;
     font-family: 'Open Sans', sans-serif;
+    outline: none;
+}
+.contacto form input:nth-child(7){
+    outline: none;
+    border: 1px solid #ff151f;
+    background-color: white;
+    font-size: 16px;
+    color: #ff151f;
+    padding: 10px 0;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.contacto form input:nth-child(7):hover{
+    background-color: #ff151f;
+    letter-spacing: 4px;
+    color: white;
 }
 
 /* Fin Seccion de contacto */
@@ -214,5 +229,12 @@ footer{
         display: block;
         margin: 0 auto;
         width: 50%;
+    }
+    .contacto p{
+        text-align: center;
+    }
+    .contacto form{
+        margin: 0 auto;
+        width: 90%;
     }
 }
